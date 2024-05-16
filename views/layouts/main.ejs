@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title %></title>
+</head>
+<body>
+    <!-- DATAFLOW:
+    app.js punto di entrata dell'applicazione
+    quando viene fatta una richeista, si riferisce a 'main.js' per il rendering
+    main.js utilizza il motore di rendering e in base alla richiesta
+    restituisce la pagina desiderata!
+    A cosa serve questo file? E' il file di default inoltrato, e la riga di sotto fa da placeholder
+    Per il contenuto poi dei rispettivi file nella cartella superiore! -->
+    <%- body %>
+</body>
+</html>

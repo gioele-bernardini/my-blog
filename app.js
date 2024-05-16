@@ -16,7 +16,7 @@ app.set('layout', './layouts/main');
 app.set('view engine', 'ejs');
 
 // To avoid implementing routes into app.js - pretty messy
-app.use('/', require('./server/routes/main.js'));
+app.use('/', require('./server/routes/main'));
 
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
